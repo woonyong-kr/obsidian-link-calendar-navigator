@@ -2,7 +2,11 @@
 
 # Manta Calendar
 
-Find dated notes in a calendar and open them with one click.
+Manta Calendar is an Obsidian Community plugin that finds dates in Markdown notes and opens the source note from a calendar or agenda.
+
+- The local calendar reads the Vault directly and needs no account or separate database.
+- Optional Google Calendar sync uses desktop loopback OAuth with PKCE. Tokens and calendar requests travel between the user's computer and Google, not through a Manta server.
+- Version 4.0.0 supports desktop Obsidian on macOS and Windows. CI covers date parsing, source policy, conflict handling, and mocked Google API flows; live-account end-to-end sync is not part of CI.
 
 **[Install in Obsidian](https://community.obsidian.md/plugins/link-calendar) · [Try the demo Vault](https://github.com/woonyong-choi/obsidian-navigator-demo-vault/releases/latest) · [User guide](docs/user-guide.md)**
 
@@ -38,9 +42,7 @@ Obsidian desktop capture, September 8, 2026 (3.6.0); the illustrated calendar vi
 
 ## Part of the Manta family
 
-Return to a dated experiment, then follow its supporting notes, diagram and runnable example. [Manta Diagrams](https://github.com/woonyong-choi/manta-diagrams), [Manta Graph](https://github.com/woonyong-choi/manta-graph), [Manta Code Blocks](https://github.com/woonyong-choi/manta-code-blocks) each work on their own. Ordinary notes and links connect the work today; automatic handoffs are planned.
-
-**Manta itself is in development and has not been released.** I’m building it to turn source material into a personal wiki you can keep adding to. Shared AI tools and the full wiki workflow are still in development.
+The plugins work independently and share ordinary Markdown and links: [Manta Diagrams](https://github.com/woonyong-choi/manta-diagrams), [Manta Graph](https://github.com/woonyong-choi/manta-graph), and [Manta Code Blocks](https://github.com/woonyong-choi/manta-code-blocks).
 
 ## Help and development
 
